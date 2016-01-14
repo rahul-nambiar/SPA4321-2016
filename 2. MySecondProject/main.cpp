@@ -3,6 +3,6 @@
 using namespace std;
 
 int main() {
-    cout << "Welcome to Queen Mary University of London!" << endl;
+    cout << "Hi, my name is Rahul." << endl;
     return 0;
 }
