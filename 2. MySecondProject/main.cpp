@@ -3,6 +3,7 @@
 using namespace std;
 
 int main() {
-    cout << "Hi, my name is Rahul." << endl;
+   string message = "This is a message.";
+    cout << message << endl;
     return 0;
 }
