@@ -9,3 +9,5 @@ int main() {
 
     return 0;
 }
+
+//If two words are input into the console, only the first is displayed.
