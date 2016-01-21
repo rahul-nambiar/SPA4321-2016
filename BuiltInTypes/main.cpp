@@ -3,15 +3,18 @@
 using namespace std;
 
 int main() {
-    int i = 1;
-    char c = 'X';
-    bool condition = true;
-    float x = 5.0;
-    double y = 5.012315658;
-    cout << i << endl;
-    cout << c << endl;
-    cout << condition << endl;
-    cout << x << endl;
-    cout << y << endl;
+    int i = i;
+    char c = c;
+    bool condition = condition;
+    float x = x;
+    double y = y;
+
+    //Assigning console input to buildintypes
+    cin >> i;
+    cin >> c;
+    cin >> condition;
+    cin >> x;
+    cin >> y;
+
     return 0;
 }
