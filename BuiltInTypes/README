@@ -1,0 +1,29 @@
+Integer - When value other than integer is input into console, it displays:
+    0
+
+    40
+    5.88727e-039
+    1.09852e+266
+
+Character - When word is input, first character is printed, console displays:
+    d
+    0
+    5.88727e-039
+    1.09852e+266
+          - When number greater than 9 is input, first character is printed, console displays:
+    5
+    1
+    5.88727e-039
+    1.09852e+266
+
+Boolean - When anything other than 1/0 is input, console displays:
+    1
+    5.88727e-039
+    1.09852e+266
+
+Float - When value other than real number is input, console displays:
+    0
+    1.09852e+266
+
+Double - When value other than real number is input, console displays:
+    0

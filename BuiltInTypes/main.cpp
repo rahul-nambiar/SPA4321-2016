@@ -4,17 +4,24 @@ using namespace std;
 
 int main() {
     int i = i;
-    char c = c;
-    bool condition = condition;
-    float x = x;
-    double y = y;
-
-    //Assigning console input to buildintypes
     cin >> i;
+    cout << i << endl;
+
+    char c = c;
     cin >> c;
+    cout << c << endl;
+
+    bool condition = condition;
     cin >> condition;
+    cout << condition << endl;
+
+    float x = x;
     cin >> x;
+    cout << x << endl;
+
+    double y = y;
     cin >> y;
+    cout << y << endl;
 
     return 0;
 }
