@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cmath>
+//Need to have '#include <cmath>' whenever mathematical functions are used.
 
 using namespace std;
 
