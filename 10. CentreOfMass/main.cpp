@@ -4,9 +4,10 @@
 using namespace std;
 
 int main() {
-    double mpi = 139.57;
-    double plab = 500;
-    double mp = 938.27;
+    float mpi = 139.57;
+    float plab = 500;
+    float mp = 938.27;
+    //May also use double; the values provided are 5 sig. figures max, so this is not needed.
 
     double el = sqrt(pow(mpi,2)+pow(plab,2));
     double ec = sqrt(pow(mpi,2)+pow(mp,2)+(2*mp*el));
