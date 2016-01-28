@@ -4,11 +4,11 @@
 using namespace std;
 
 int main() {
-    cout << "Enter initial velocity: ";
+    cout << "Enter initial velocity: " << endl;
     float u;
     cin >> u;
 
-    cout << "Enter angle: ";
+    cout << "Enter angle: " << endl;
     float theta;
     cin >> theta;
 
@@ -18,7 +18,7 @@ int main() {
     float ivy = u*sin(theta);
     cout << "Y-component of initial velocity = " << ivy << endl;
 
-    float g = 9.81;
+    float g = 10;
 
     float t = ivy/g;
     cout << "Time taken to reach point B = " << t << endl;
