@@ -4,9 +4,20 @@
 using namespace std;
 
 int main() {
-    cout << "Enter first value:" << endl;
     float a;
-    cin >> a >> endl;
+    cin >> a;
+    float b;
+    cin >> b;
+    float c;
+    cin >> c;
+    float d;
+    cin >> d;
+    float e;
+    cin >> e;
 
+    float y = a + b + c + d + e;
+    float z = y/5;
+
+    cout << z << endl;
     return 0;
 }
