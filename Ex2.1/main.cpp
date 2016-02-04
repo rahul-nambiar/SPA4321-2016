@@ -25,27 +25,51 @@ int main(int argc, char * argv[]) {
 	window.forward(500);
 	window.stopLine();
 
+	int c = 250;
 	int n = 3;
 float pi = 3.14159;
 
 	int a = (180*(n-2))/n;
 	float b = (pi/180)*(a/2);
 
+	std::cout << a << std::endl << b << std::endl << n << std::endl << pi << std::endl;
+
 int l=200;
-int x1 = 250-(l/2);
-int y1 = 250-((l/2)*tan(b));
+int x1 = c-(l/2);
+int y1 = c-((l/2)*tan(b));
 
 	window.startLine(x1,y1);
 	window.setAngle(0);
-	window.forward(200);
+	window.forward(l);
 
 	for (int i = 0; i <n; ++i) {
 
 		window.rotateDegrees(360/n);
-		window.forward(200);
+		window.forward(l);
 	}
 		window.stopLine();
 	// Add code here to draw things
+	int n2 = 5;
+
+	int a2 = (180*(n2-2))/n2;
+	float b2 = (pi/180)*(a2/2);
+
+	std::cout << a2 << std::endl << b2 << std::endl << n2 << std::endl << pi << std::endl;
+
+	int l2=250;
+	int x2 = c-(l2/2);
+	int y2 = c-((l2/2)*tan(b2));
+
+	window.startLine(x2,y2);
+	window.setAngle(0);
+	window.forward(l2);
+
+	for (int i = 0; i <n2; ++i) {
+
+		window.rotateDegrees(360/n2);
+		window.forward(l2);
+	}
+	window.stopLine();
 
 	/*
 	 * Here are some of the options
