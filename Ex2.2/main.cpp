@@ -6,6 +6,7 @@
  */
 #include <iostream>
 #include "Window.h"
+#include <fstream>
 
 using namespace std;
 
