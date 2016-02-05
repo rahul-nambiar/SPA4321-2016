@@ -26,6 +26,30 @@ do {
 	cin >> sideLength;
 } while (sideLength<0);
 
+	float n = nSides;
+
+// Drawing
+
+	int Centre = 250;
+	float pi = 3.14159;
+
+	int a = (180*(nSides-2))/nSides;
+	float b = (pi/180)*(a/2);
+
+	int x1 = Centre-(sideLength/2);
+	int y1 = Centre-((sideLength/2)*tan(b));
+
+	window.startLine(x1,y1);
+	window.setAngle(0);
+	window.forward(sideLength);
+
+	for (int i = 0; i <(nSides-1); ++i) {
+
+		window.rotateDegrees(360/n);
+		window.forward(sideLength);
+	}
+	window.stopLine();
+
 	// Add code here to draw things
 
 	/*

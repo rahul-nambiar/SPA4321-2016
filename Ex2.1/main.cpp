@@ -28,6 +28,7 @@ int main(int argc, char * argv[]) {
 // TRIANGLE
 	int c = 250;
 	int n = 3;
+	float nf = n;
 float pi = 3.14159;
 
 	int a = (180*(n-2))/n;
@@ -43,9 +44,9 @@ int y1 = c-((l/2)*tan(b));
 	window.setAngle(0);
 	window.forward(l);
 
-	for (int i = 0; i <n; ++i) {
+	for (int i = 0; i <(n-1); ++i) {
 
-		window.rotateDegrees(360/n);
+		window.rotateDegrees(360/nf);
 		window.forward(l);
 	}
 		window.stopLine();
@@ -54,6 +55,7 @@ int y1 = c-((l/2)*tan(b));
 	// PENTAGON
 
 	int n2 = 5;
+	float n2f = n2;
 
 	int a2 = (180*(n2-2))/n2;
 	float b2 = (pi/180)*(a2/2);
@@ -68,9 +70,9 @@ int y1 = c-((l/2)*tan(b));
 	window.setAngle(0);
 	window.forward(l2);
 
-	for (int i = 0; i <n2; ++i) {
+	for (int i = 0; i <(n2-1); ++i) {
 
-		window.rotateDegrees(360/n2);
+		window.rotateDegrees(360/n2f);
 		window.forward(l2);
 	}
 	window.stopLine();
