@@ -15,8 +15,16 @@ int main(int argc, char * argv[]) {
 	SPA::Window window(500,500,"My Test");
 
 	int nSides;
-cout << "Enter number of sides: " << endl;
-cin >> nSides;
+do {
+	cout << "Enter number of sides: " << endl;
+	cin >> nSides;
+} while (nSides<3);
+
+	int sideLength;
+do {
+	cout << "Enter length of side: " << endl;
+	cin >> sideLength;
+} while (sideLength<0);
 
 	// Add code here to draw things
 
