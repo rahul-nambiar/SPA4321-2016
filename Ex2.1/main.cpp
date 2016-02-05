@@ -25,6 +25,7 @@ int main(int argc, char * argv[]) {
 	window.forward(500);
 	window.stopLine();
 
+// TRIANGLE
 	int c = 250;
 	int n = 3;
 float pi = 3.14159;
@@ -49,6 +50,9 @@ int y1 = c-((l/2)*tan(b));
 	}
 		window.stopLine();
 	// Add code here to draw things
+
+	// PENTAGON
+
 	int n2 = 5;
 
 	int a2 = (180*(n2-2))/n2;
