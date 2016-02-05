@@ -19,12 +19,20 @@ int main(int argc, char * argv[]) {
 do {
 	cout << "Enter number of sides: " << endl;
 	cin >> nSides;
+	if (cin.fail()) {
+		cout << "Invalid input. Program will be terminated." << endl;
+		return 0;
+	}
 } while (nSides<3);
 
 	int sideLength;
 do {
 	cout << "Enter length of side: " << endl;
 	cin >> sideLength;
+	if (cin.fail()) {
+		cout << "Invalid input. Program will be terminated." << endl;
+		return 0;
+	}
 } while (sideLength<0);
 
 	float n = nSides;
