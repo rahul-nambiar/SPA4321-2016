@@ -12,22 +12,13 @@
 int main(int argc, char * argv[]) {
 // create a new window of size 500 x 500 pixels
 // the top left corner of the window is (0,0)
-	SPA::Window window(500,500,"My Test");
+	SPA::Window window(600,600,"My Test");
 
 	// Add code here to draw things
-	int sides = 3;
-	int radius = 200;
-	int x = 250;
-	int y = 250;
-
-makePolygonCircle(window,sides,radius,x,y);
-
-	SPA::Window window2(600,600,"My Test 2");
-
 	for (int i = 3; i < 8; ++i) {
-		makePolygonCircle(window2,i,200,300,300);
+		makePolygonCircle(window,i,200,300,300);
 	}
-
+makePolygonCircle(window,400,200,300,300);
 	/*
 	 * Here are some of the options
 	 * window.startLine(float x, float y) start a new line from location (x,y)
@@ -39,7 +30,6 @@ makePolygonCircle(window,sides,radius,x,y);
 
 	// display the window
 	window.show(argc,argv);
-	window2.show(argc,argv);
 	// run the FLTK event loop - this allows you to move the window around etc
 	// and ultimately set up click events.
 	// program will end when you close the window

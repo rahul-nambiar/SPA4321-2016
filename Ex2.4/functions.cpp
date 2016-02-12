@@ -3,7 +3,7 @@
 
 void makePolygonCircle(SPA::Window&window,int sides,int radius,int x,int y){
 
-    int a = (180*(sides-2))/sides;
+    float a = (180*((float)sides-2))/sides;
     float b = (M_PI/180)*(a/2);
     float h = cos(b)*radius; //HALF SIDE LENGTH
 
@@ -16,7 +16,7 @@ void makePolygonCircle(SPA::Window&window,int sides,int radius,int x,int y){
 
     for (int i = 0; i <(sides -1); ++i) {
 
-        window.rotateDegrees(360/sides);
+        window.rotateDegrees(360./sides);
         window.forward(h);
     }
     window.stopLine();
