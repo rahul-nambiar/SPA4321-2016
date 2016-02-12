@@ -9,7 +9,7 @@ ofstream OutputFile("C:/Users/ap15114/ClionProjects/ap15114/FilesOutput/numbers.
 
     for (int n = 0; n < 10; ++n) {
 
-    int i;
+    float i;
     cin >> i;
 
     OutputFile << i << endl;
