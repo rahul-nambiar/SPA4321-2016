@@ -16,7 +16,8 @@ int main(int argc, char * argv[]) {
 	SPA::Window window(500,500,"My Test");
 
 	// Add code here to draw things
-
+	window.startLine(100,100);
+	window.addPoint(100.0,200.0);
 	/*
 	 * Here are some of the options
 	 * window.startLine(float x, float y) start a new line from location (x,y)
