@@ -1,0 +1,8 @@
+ap15114
+   Ex1.1 3 Correct
+   Ex1.2 3 Correct
+   Ex1.3 3 Correct
+   Ex1.4 6 Correct
+   Ex1.5 9 Correct
+   Ex1.6 2 Incorrect output
+Total grade : 26/27
