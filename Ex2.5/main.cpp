@@ -1,23 +1,23 @@
-/*
- * main.cpp
- *
- *  Created on: 18 Dec 2014
- *      Author: apw253
- */
-
+#include <iostream>
+#include <fstream>
 #include "Window.h"
 #include "Colours.h"
 
-
+using namespace std;
 
 int main(int argc, char * argv[]) {
 // create a new window of size 500 x 500 pixels
 // the top left corner of the window is (0,0)
 	SPA::Window window(500,500,"My Test");
-
-	// Add code here to draw things
-	window.startLine(100,100);
-	window.addPoint(100.0,200.0);
+	ifstream InputFile("C:/Users/Rahul/ClionProjects/ap15114/Ex2.5/points.dat");
+	int x,y;
+while (!InputFile.eof())
+{
+	InputFile >> x >> y;
+	window.addPoint(x,y);
+	cout << x << " " << y << endl;
+}
+	window.stopLine();
 	/*
 	 * Here are some of the options
 	 * window.startLine(float x, float y) start a new line from location (x,y)
@@ -37,5 +37,3 @@ int main(int argc, char * argv[]) {
 	// program will end when you close the window
 	return Fl::run();
 }
-
-
