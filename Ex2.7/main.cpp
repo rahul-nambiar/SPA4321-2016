@@ -2,6 +2,8 @@
 #include <fstream>
 #include "Window.h"
 #include "Colours.h"
+#include "functions.h"
+#include <vector>
 
 using namespace std;
 
@@ -10,8 +12,18 @@ int main(int argc, char * argv[]) {
 // the top left corner of the window is (0,0)
 	SPA::Window window(500,500,"My Test");
 
+ifstream InputFile("G:/points3.dat");
+	int n;
+	InputFile >> n;
 	// Add code here to draw things
+vector<float> xvec;
+vector<float> yvec;
 
+readPoints(n,xvec,yvec,InputFile);
+
+	for (int i = 0; i!=n ; ++i) {
+		cout << xvec[i] << " " << yvec[i] << endl;
+	}
 	/*
 	 * Here are some of the options
 	 * window.startLine(float x, float y) start a new line from location (x,y)

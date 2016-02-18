@@ -9,8 +9,8 @@ project(Ex2_7)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}-std=c++11")
 
-set(SOURCE_FILES main.cpp Window.cpp Window.h Colours.h)
-add_executable(${PROJECT_NAME} ${SOURCE_FILES})
+set(SOURCE_FILES main.cpp Window.cpp Window.h Colours.h functions.cpp functions.h)
+add_executable(${PROJECT_NAME} ${SOURCE_FILES} functions.cpp functions.h)
 
 set(mingw true)
 if(mingw)
