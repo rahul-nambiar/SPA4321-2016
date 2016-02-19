@@ -5,7 +5,7 @@ cmake_minimum_required(VERSION 3.3)
 # so for a project called Ex2.1 you need
 # project(Ex2_1)
 #
-project(FLTK_Animate)
+project(Ex2_8)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}-std=c++11")
 
