@@ -3,17 +3,12 @@
 //
 
 #include "functions.h"
-#include <iostream>
-#include <fstream>
-#include <vector>
 
 using namespace std;
 
 void readPoints(int n,std::vector<float> & xvec,std::vector<float> & yvec,ifstream & f)
 {
-    cout << n << endl;
-
-    for (int i = 0; i < n+1; ++i) {
+    for (int i = 0; i < n; ++i) {
         float x,y;
         f >> x;
         if (f.fail()){
@@ -25,7 +20,6 @@ void readPoints(int n,std::vector<float> & xvec,std::vector<float> & yvec,ifstre
         }
         xvec.push_back(x);
         yvec.push_back(y);
-
         if (f.fail()){
             break;
         }
@@ -34,14 +28,15 @@ void readPoints(int n,std::vector<float> & xvec,std::vector<float> & yvec,ifstre
 
 void drawPoints(SPA::Window & window,vector<float> xvec,vector<float> yvec)
 {
-int i=0;
-
+    int i=0;
     for (vector<float>::iterator iterator1=xvec.begin(); iterator1 != xvec.end(); ++iterator1) {
         float x=0;
         float y=0;
-        x=xvec.at(i);
-        y=yvec.at(i);
+        x=xvec[i];
+        y=yvec[i];
         window.addPoint(x,y);
+//        cout << xvec[i] << " " << yvec[i] << endl;
         ++i;
     }
+    window.stopLine();
 }

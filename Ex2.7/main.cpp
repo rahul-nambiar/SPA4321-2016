@@ -12,20 +12,22 @@ int main(int argc, char * argv[]) {
 // the top left corner of the window is (0,0)
 	SPA::Window window(500,500,"My Test");
 
-	ifstream InputFile("G:/points3.dat");
 	int n;
-	InputFile >> n;
-	// Add code here to draw things
 	vector<float> xvec;
 	vector<float> yvec;
 
-readPoints(n,xvec,yvec,InputFile);
+	ifstream InputFile("C:/Users/Rahul/ClionProjects/ap15114/Ex2.7/points3.dat");
 
-	for (int i = 0; i!=n ; ++i) {
-		cout << xvec[i] << " " << yvec[i] << endl;
+for (int j = 0; j < 2; ++j) {
+		InputFile >> n;
+		readPoints(n,xvec,yvec,InputFile);
+		drawPoints(window,xvec,yvec);
+		window.stopLine();
+	if (InputFile.eof())
+		{
+			break;
+		}
 	}
-
-drawPoints(window,xvec,yvec);
 
 //	 * Here are some of the options
 //	 * window.startLine(float x, float y) start a new line from location (x,y)
