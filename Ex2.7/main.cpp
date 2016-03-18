@@ -7,6 +7,9 @@
 
 using namespace std;
 
+//-- JDM no comments -0.5
+//-- JDM no print to console -1
+
 int main(int argc, char * argv[]) {
 // create a new window of size 500 x 500 pixels
 // the top left corner of the window is (0,0)
@@ -16,7 +19,7 @@ int main(int argc, char * argv[]) {
 	vector<float> xvec;
 	vector<float> yvec;
 
-	ifstream InputFile("C:/Users/Rahul/ClionProjects/ap15114/Ex2.7/points3.dat");
+	ifstream InputFile("../../points3.dat");
 
 for (int j = 0; j < 2; ++j) {
 		InputFile >> n;

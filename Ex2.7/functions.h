@@ -9,6 +9,7 @@ using namespace std;
 
 void readPoints(int n,std::vector<float> & xvec,std::vector<float> & yvec,ifstream & f);
 
+//-- JMH -0.5 vector should be const
 void drawPoints(SPA::Window & window,vector<float> xvec,vector<float> yvec);
 
 #endif //EX2_7_FUNCTIONS_H

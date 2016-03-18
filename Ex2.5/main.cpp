@@ -5,11 +5,13 @@
 
 using namespace std;
 
+//-- JDM no comments -1
+
 int main(int argc, char * argv[]) {
 // create a new window of size 500 x 500 pixels
 // the top left corner of the window is (0,0)
 	SPA::Window window(500,500,"My Test");
-	ifstream InputFile("C:/Users/Rahul/ClionProjects/ap15114/Ex2.5/points.dat");
+	ifstream InputFile("../../points.dat");
 	int x,y;
 while (!InputFile.eof())
 {

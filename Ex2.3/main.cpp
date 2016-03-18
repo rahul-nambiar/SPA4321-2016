@@ -1,6 +1,8 @@
 #include "Window.h"
 #include "functions.h"
 
+//-- JDM integer division -0.5
+
 int main(int argc, char * argv[]) {
 // create a new window of size 500 x 500 pixels
 // the top left corner of the window is (0,0)

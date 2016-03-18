@@ -5,11 +5,14 @@
 
 using namespace std;
 
+//-- JDM no comments -1
+//-- JDM no state test -2
+
 int main(int argc, char * argv[]) {
 	SPA::Window window(500,500,"My Test");
 
 	// Add code here to draw things
-ifstream InputFile("C:/Users/Rahul/ClionProjects/ap15114/Ex2.6/points2.dat");
+ifstream InputFile("../../points2.dat");
 	int npoints;
 	InputFile >> npoints;
 

@@ -6,7 +6,7 @@
  */
 
 #include "Shape.h"
-#include "FL/FL.h"
+#include "FL/Fl.h"
 
 namespace SPA {
 
