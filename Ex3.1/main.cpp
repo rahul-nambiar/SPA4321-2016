@@ -1,7 +1,6 @@
 #include <iostream>
 #include "functions.h"
 #include "random.h"
-#include <cmath>
 
 using namespace std;
 
