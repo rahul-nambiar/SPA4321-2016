@@ -3,9 +3,9 @@
  *      Author: Jon
  */
 
-
 #include <cmath>
 #include <cstdlib>
+#include <ctime>
 
 #include "random.h"
 

@@ -1,10 +1,16 @@
 #include <iostream>
+#include <cstdlib>
+#include <ctime>
 #include "functions.h"
 #include "random.h"
 
 using namespace std;
 
 int main() {
+
+srand(time(0));
+time_t t = time(0);
+cout << t << endl;
 
     bool t1 = test1();
     if (t1){
@@ -22,6 +28,7 @@ int main() {
         cout << "Test 2 FAILED" << endl;
     }
 
+    int hits = 0;
     double speed = 10.0;
     double distance = 5.0;
 
@@ -29,26 +36,22 @@ int main() {
     cout << nominalAngle << endl;
 
     double pi = 3.141592654;
-    double sigma1 = (pi/180)*2;
+    double sigma1 = 2*(pi/180);
+
+for (int i = 0; i < 10000; ++i) {
 
     double deltaAngle = Random::randomNorm(0,sigma1);
-    cout << deltaAngle << endl;
-
     double actualAngle = nominalAngle + deltaAngle;
-    cout << actualAngle << endl;
 
     double deltaSpeed = Random::randomNorm(1,0.1);
-
     double actualSpeed = speed*deltaSpeed;
 
-    int hits = 0;
+    double height = impact(actualAngle,actualSpeed,distance);
 
-    for (int i = 0; i < 10001; ++i) {
-        double height = impact(actualAngle,actualSpeed,distance);
-        if(height<0.5,height>-0.5){
-            hits++;
-        }
+    if(-0.5<height<0.5){
+        hits++;
     }
+}
 cout << hits;
     return 0;
 }
